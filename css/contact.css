@@ -1,0 +1,47 @@
+:root {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-size: 50%;
+    background-color: rgb(19, 220, 255);
+    background-image: url(../Assets/pic6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+
+header {
+    display: flex;
+    margin-left: 10%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+}
+
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-information {
+    align-items: flex-start;
+    margin-left: 30%;
+    padding:10px;
+    border: 2px solid black;
+    width: 50%;
+
+}
+
+.customer-submit {
+    border:1px solid black;
+    display: flex;
+}
+
+.field{
+    margin-left: 100%;
+}
