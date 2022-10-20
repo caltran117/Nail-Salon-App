@@ -17,7 +17,11 @@ This solves the problem of clients having to call the salon for an appointment a
 
 ## Credits
 
-Calvin, Muchir, Anne, Saab, Alejandro
+- Calvin
+- Muchir
+- Anne
+- Saab
+- Alejandro
 
 ## License
 
