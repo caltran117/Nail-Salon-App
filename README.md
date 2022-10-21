@@ -20,7 +20,7 @@ This solves the problem of clients having to call the salon for an appointment a
 - Calvin
 - Muchir
 - Anne
-- Saab
+- Saad
 - Alejandro
 
 ## License
@@ -31,7 +31,4 @@ no license, ask for permission to use.
 
 appointments creation
 day occupancy view
-
-
-muchir
 
