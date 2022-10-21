@@ -7,34 +7,32 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<!-- <body>subj - day & time, body-- form field (name, service would like, phone number), mail sent to destination -->
-   <body>
-
-<!-- calendar -->
-
-<!-- form -->
-<form id="apptForm">
-    <input type="text" name="name" id="name" />
-    <input type="number" name="phone" id="phone" />
-    <button id="submitbtn" type="submit">Submit for appointment</button>
-    <a id="mailto" class="hidden" href="mailto:test@test.com?subject=&body=">ask for appointment
-    </a>
-    <!-- $('#mailto').trigger('click'); -->
-</form>
-<!-- name
-Phone#
-Service
-Comments -->
-
-<!-- email link -->
+<!--  day & time, body-- form field (name, service would like, phone number, day and time), mail sent to destination -->
  
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <body>
+        
+        <header class="jumbotron">
+            <h1 id="headerh1">mAking wAves saLon</h1>
+            <p id="CurrentDate"></p>
+        </header>
+        <!-- calendar -->
+        <div id="calendar"></div>
+        <!-- form -->
+        <form id="apptForm">
+            <input type="text" placeholder="name" name="name" id="name" /><br>
+            <input type="text" placeholder="service"name="service" id="service"/><br>
+            <input type="tel" placeholder="phone number"name="phone" id="phone" /><br>
+            <input type ="datetime" placeholder="date & time" name="date" id="date"/>
+            <!-- make this into a button please -->
+            <!-- $('#mailto').trigger('click'); (anthony said to do this) -->
+            <br>
+            <a id="mailto" href="mailto:makingwaves@gmail.com?subject=...&body=...">Submit</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./js/script.js"></script>
-
-
-
-    <!-- day & time is filled in email from calender -->
-    <!-- map of location and contact information -->
-
-</body>
+    </body>
 </html>
+
+
+<!-- future development: add day view of occupancy of salon for walk-in clients -->
