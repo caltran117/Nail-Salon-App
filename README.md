@@ -13,7 +13,12 @@ This solves the problem of clients having to call the salon for an appointment a
 We started off building this app as a very basic level because of our skill level, but we do intend on making improves to meet our acceptance criterias. 
 
 This app is a Calendar that is view only of any appointments taken, and a form that pre fills the email . Contact page will include a map and contact information. 
+
+You can view the demo of the app <a href="https://caltran117.github.io/Nail-Salon-App/">here</a>
+
 ### Picture or Mock
+
+<img src="./Assets/Screenshot 2022-10-23 185725.png>
 
 ## Acceptance Criteria or Milestones
 it will be completed when we have a interface then clients can use a see it, 
