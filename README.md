@@ -32,6 +32,7 @@ when there is a pre fill email link that uses javascript to take information fro
 ### APIs you plans to use or Technology
 Google calendar
 Google Maps
+Leafly
 
 ### Specific First Tasks - Assigned
 HTML, then CSS, then Javascript
