@@ -18,7 +18,7 @@ You can view the demo of the app ![water with hand](Assets\Screenshot 2022-10-23
 
 ### Picture or Mock
 
-<img src="./Assets/Screenshot 2022-10-23 185725.png">
+![water and hand](./Assets/Screenshot 2022-10-23 185725.png?raw=true "here")
 
 ## Acceptance Criteria or Milestones
 it will be completed when we have a interface then clients can use a see it, 
