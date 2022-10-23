@@ -18,7 +18,7 @@ You can view the demo of the app ![water with hand](Assets\Screenshot 2022-10-23
 
 ### Picture or Mock
 
-![water and hand](./Assets/Screenshot 2022-10-23 185725.png?raw=true "here")
+![Screenshot 2022-10-23 185725](https://user-images.githubusercontent.com/84696281/197423060-a6de0a0c-7485-42f0-b297-567ccd70cef3.png)
 
 ## Acceptance Criteria or Milestones
 it will be completed when we have a interface then clients can use a see it, 
@@ -32,6 +32,7 @@ when there is a pre fill email link that uses javascript to take information fro
 ### APIs you plans to use or Technology
 Google calendar
 Google Maps
+Leafly
 
 ### Specific First Tasks - Assigned
 HTML, then CSS, then Javascript
