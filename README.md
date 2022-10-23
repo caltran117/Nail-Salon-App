@@ -18,7 +18,7 @@ You can view the demo of the app <a href="https://caltran117.github.io/Nail-Salo
 
 ### Picture or Mock
 
-<img src="./Assets/Screenshot 2022-10-23 185725.png>
+<img src="./Assets/Screenshot 2022-10-23 185725.png">
 
 ## Acceptance Criteria or Milestones
 it will be completed when we have a interface then clients can use a see it, 
