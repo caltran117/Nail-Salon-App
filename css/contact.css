@@ -57,3 +57,7 @@ p {
     height: 480px; 
 
 }
+
+#mailto {
+    display: none;
+}
