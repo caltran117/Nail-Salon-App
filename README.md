@@ -14,7 +14,7 @@ We started off building this app as a very basic level because of our skill leve
 
 This app is a Calendar that is view only of any appointments taken, and a form that pre fills the email . Contact page will include a map and contact information. 
 
-You can view the demo of the app <a href="https://caltran117.github.io/Nail-Salon-App/">here</a>
+You can view the demo of the app ![water with hand](Assets\Screenshot 2022-10-23 185725.png?raw=true "here")
 
 ### Picture or Mock
 
