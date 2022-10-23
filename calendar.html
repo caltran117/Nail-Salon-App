@@ -5,29 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./CalendarFiles/lib/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/calendar.css">
+    <script src="./CalendarFiles/lib/main.js"></script>
 </head>
     <body>
         
         <header class="jumbotron">
             <h1 id="headerh1">mAking wAves saLon</h1>
-            <p id="CurrentDate"></p>
         </header>
-        <!-- calendar -->
-        <div id="calendar"></div>
-        <!-- form -->
-        <form id="apptForm">
-            <input type="text" placeholder="name" name="name" id="name" /><br>
-            <input type="text" placeholder="service"name="service" id="service"/><br>
-            <input type="tel" placeholder="phone number"name="phone" id="phone" /><br>
-            <input type ="datetime" placeholder="date & time" name="date" id="date"/>
-            <!-- make this into a button please -->
-            <!-- $('#mailto').trigger('click'); (anthony said to do this) -->
-            <br>
-            <a id="mailto" href="mailto:makingwaves@gmail.com?subject=...&body=...">Submit</a>
+        
+        <section id="container">
+
+            <!-- calendar -->
+            <div id="calendar"></div>
+
+            <!-- form -->
+            <form id="app-form">
+
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input type="text" placeholder="name" name="name" id="name" class="input" />
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Service</label>
+                    <div class="control">
+                        <input type="text" placeholder="service"name="service" id="service" class="input"/>
+                    </div>
+                </div>
+    
+                <div class="field">
+                    <label class="label">Phone Number</label>
+                    <div class="control">
+                        <input type="tel" placeholder="phone number"name="phone" id="phone" class="input" />
+                    </div>
+                </div>
+    
+                <div class="field">
+                    <label class="label">Date & Time</label>
+                    <div class="control">
+                        <input type ="datetime" placeholder="date & time" name="date" id="date" class="input"/>
+                    </div>
+                </div>
+                
+                <div class="control">
+                    <button id="submit" class="button is-primary">Submit</button>
+                </div>
+                
+                <!-- make this into a button please -->
+                
+                <!-- $('#mailto').trigger('click'); (anthony said to do this) -->
+                <br>
+                <a id="mailto" href="mailto:makingwaves@gmail.com?subject=...&body=..."></a>
+    
+            </form>
+        </section>
+        
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/calendar.js"></script>
     </body>
 </html>
 
