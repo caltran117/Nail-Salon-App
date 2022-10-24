@@ -15,57 +15,21 @@
         <header class="jumbotron">
             <h1 id="headerh1">mAking wAves saLon</h1>
         </header>
-        
-        <section id="container">
-
-            <!-- calendar -->
-            <div id="calendar"></div>
-
-            <!-- form -->
-            <form id="app-form">
-
-                <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control">
-                        <input type="text" placeholder="name" name="name" id="name" class="input" />
-                    </div>
-                </div>
-                
-                <div class="field">
-                    <label class="label">Service</label>
-                    <div class="control">
-                        <input type="text" placeholder="service"name="service" id="service" class="input"/>
-                    </div>
-                </div>
-    
-                <div class="field">
-                    <label class="label">Phone Number</label>
-                    <div class="control">
-                        <input type="tel" placeholder="phone number"name="phone" id="phone" class="input" />
-                    </div>
-                </div>
-    
-                <div class="field">
-                    <label class="label">Date & Time</label>
-                    <div class="control">
-                        <input type ="datetime" placeholder="date & time" name="date" id="date" class="input"/>
-                    </div>
-                </div>
-                
-                <div class="control">
-                    <button id="submit" class="button is-primary">Submit</button>
-                </div>
-                
-                <!-- make this into a button please -->
-                
-                <!-- $('#mailto').trigger('click'); (anthony said to do this) -->
-                <br>
-                <a id="mailto" href="mailto:makingwaves@gmail.com?subject=...&body=..."></a>
-    
-            </form>
-        </section>
-        
-
+        <!-- calendar -->
+        <div id="calendar"></div>
+        <!-- form -->
+        <div id="apptForm">
+            <input type="text" placeholder="name" name="name" id="name" /><br>
+            <input type="text" placeholder="service"name="service" id="service"/><br>
+            <input type="tel" placeholder="phone number"name="phone" id="phone" /><br>
+            <input type="date" placeholder="date" name="date" id="date"/><br>
+            <input type="time" placeholder="time" name="time" id="time"/>
+            <!-- make this into a button please -->
+            <!-- $('#mailto').trigger('click'); (anthony said to do this) -->
+            <br>
+            <button type="button" id="mailto" onclick="location.href='mailto:makingwaves@gmail.com?subject=...&body=...'">Submit</button>
+            <button type="button" onclick="location.href='contact.html'">Contact Info</button>
+        </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./js/calendar.js"></script>
     </body>
