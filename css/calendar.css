@@ -27,7 +27,7 @@ h1{
     
 }
 
-#app-form {
+#apptForm {
     background-color:#f8ccbe;
     border: 2px solid #dbcbc6;
     width: 25%;
@@ -39,9 +39,11 @@ h1{
     width: 60%;
 }
 
-#submit {
+button {
     background: rgb(6, 121, 121);
     border-radius: 25px;
+    border:1px solid beige;
+    color:beige;
 }
 
 :root {
@@ -49,7 +51,6 @@ h1{
     margin: 0px;
     padding: 0px;
     background-size: 50%;
-    background-color: rgb(19, 220, 255);
     background-image: url(../Assets/pic4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
