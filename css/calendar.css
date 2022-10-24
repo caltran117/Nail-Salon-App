@@ -1,9 +1,16 @@
-#container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items:flex-end;
+/*add background img*/
+:root {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-size: 100%;
+    background-image: url(../Assets/pic4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
 }
 
+/*set header and font style */
 #headerh1 {
     border: 1px solid rgb(74, 133, 133);
     line-height: 55px;
@@ -16,42 +23,64 @@
     margin-bottom: 100px;   
 }
 
-h1{
-    color:linear-gradient(to right, rgb(94, 207, 211), rgb(12, 5, 71));
-}
-
+/*edit form position and border*/
 #calendar {
-    border: 1px solid black;
-    height:fit-content;
-    width: auto;
-    
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-end;
+    font-family: monospace;
+    font-size: 30px;
+    margin: 9% 40% 0 30%;
+    border: 1rem solid rgb(6, 121, 121);
 }
 
-#app-form {
-    background-color:#f8ccbe;
-    border: 2px solid #dbcbc6;
-    width: 25%;
+/*edit form setting*/
+#apptForm {
+    background-image: url(../Assets/pic7.jpg);
+    width:100%;
     padding-left: 40px;
     padding-top: 5px;
 }
 
-.input {
-    width: 60%;
-}
-
-#submit {
-    background: rgb(6, 121, 121);
-    border-radius: 25px;
-}
-
-:root {
+input{
+    border:1px solid grey;
+    border-radius: 3px;
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    background-size: 50%;
-    background-color: rgb(19, 220, 255);
-    background-image: url(../Assets/pic4.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: aliceblue;
+    box-shadow:0 0 15px 8px rgba(0,0,0,0.06);
+    font-size: 15px;
+    transform:translate(25%,10%);
+    width: 300px;
+    padding: 10px;
 }
+
+/*pseudo element on input*/
+input:hover {
+    background-color:antiquewhite;
+    transition: 0.2s;
+}
+
+/*set button style and border*/
+button {
+    background: rgb(6, 121, 121);
+    color:beige;
+    font-size: 18px;
+    margin:2% 30%;
+    width: 150px;
+    border-radius: 10px;
+    border:1px solid beige;
+}
+
+/*add hover on button*/
+button:hover {
+    background-color:#e069a1;
+    transition: 0.2s;
+}
+
+/*select dropmenu for service option*/
+select {
+    width: 300px;
+    padding:10px;
+    border-radius:3px;
+    transform:translate(25%,10%);
+
+  } 
