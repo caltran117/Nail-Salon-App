@@ -59,5 +59,10 @@ p {
 }
 
 #mailto {
-    display: none;
+    color: white;
+    text-decoration: none;
+    border: gray;
+    background: gray;
+    padding: 5px;
+    border-radius: 5px;
 }
