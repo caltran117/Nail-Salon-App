@@ -18,27 +18,34 @@
             <i>
                 <span style="color:#e069a1">mAke</span>
                 <span style="color:#66CC66">wAves</span>
-            </i>saLon
+            </i>
+            saLon
         </h1>
     </header>
-
-    <div id="container">
-        <div id="calendar"></div>
-        <!-- form -->
-        <div id="apptForm">
-            <input type="text" placeholder="name" name="name" id="name" /><br>
-            <input type="text" placeholder="service" name="service" id="service" /><br>
-            <input type="tel" placeholder="phone number" name="phone" id="phone" /><br>
-            <input type="date" placeholder="date" name="date" id="date" /><br>
-            <input type="time" placeholder="time" name="time" id="time" />
-            <!-- make this into a button please -->
-            <!-- $('#mailto').trigger('click'); (anthony said to do this) -->
-            <br>
-            <button type="button" id="mailto"
-                onclick="location.href='mailto:makingwaves@gmail.com?subject=...&body=...'">Submit</button>
-            <button type="button" onclick="location.href='contact.html'">Contact Info</button>
+  
+        <!-- calendar -->
+        <div id="calendar">
+            <!-- form -->
+            <div id="apptForm">
+                <input type="text" placeholder="name" name="name" id="name" /><br>
+            <select name="service" placeholder="service" id="service">
+                <option value="manicure">manicure</option>
+                <option value="pedicure">pedicure</option>
+                <option value="dip powder">dip powder</option>
+                <option value="waxing">waxing</option>
+                <option value="eyelash extensions">eyelash extensions</option>
+            </select><br>
+                <input type="tel" placeholder="phone number" name="phone" id="phone" /><br>
+                <input type="date" placeholder="date" name="date" id="date" /><br>
+                <input type="time" placeholder="time" name="time" id="time" />
+                <!-- make this into a button please -->
+                <!-- $('#mailto').trigger('click'); (anthony said to do this) -->
+                <br>
+                <button type="button" id="mailto"
+                    onclick="location.href='mailto:makingwaves@gmail.com?subject=...&body=...'">Submit</button>
+                <button type="button" onclick="location.href='contact.html'">Contact Info</button>
+            </div>
         </div>
-    </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./js/calendar.js"></script>
