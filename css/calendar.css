@@ -24,7 +24,7 @@
 }
 
 /*edit form position and border*/
-#calendar {
+.calendar-form {
     display: flex;
     justify-content: space-evenly;
     align-items:flex-end;
