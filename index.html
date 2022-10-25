@@ -1,114 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
-    <title>Nail Salon Schedule</title>
-  </head>
 
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mAke wAves saLon</title>
+    <link rel="stylesheet" href="./CalendarFiles/lib/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./css/calendar.css">
+    <script src="./CalendarFiles/lib/main.js"></script>
+</head>
+
+<body>
     <header class="jumbotron">
-      <h1 class="display-3">Appoinment Calendar</h1>
-      <p class="lead">Schedule an Appoinment</p>
-      <p id="currentDay" class="lead"></p>
+        <h1 id="headerh1">
+            <i>
+                <span style="color:#e069a1">mAke</span>
+                <span style="color:#66CC66">wAves</span>
+            </i>
+            saLon
+        </h1>
     </header>
 
-
-    <!-- Main container -->
-    <div class="container">
-      <!-- blocks for hourly hours in the day -->
-      <div>
-        <h1>09AM</h1>
-        <input placeholder="Service needed"></input>
-        <!-- <button class="fas fa-save saveBtn"></button> -->
-        <a href="mailto:test@test.com?subject=&body=">ask for appointment
-        </a>
-      </div>
-
-      <div>
-        <h1>10AM</h1>
-        <input placeholder="Service needed"></input>
-        <!-- <button class="fas fa-save saveBtn"></button> -->
-        <a href="mailto:test@test.com?subject=&body=">ask for appointment
-        </a>
-      </div>
-
-      <div>
-        <h1>11AM</h1>
-        <input placeholder="Service needed"></input>
-        <!-- <button class="fas fa-save saveBtn"></button> -->
-        <a href="mailto:test@test.com?subject=&body=">ask for appointment
-        </a>
-      </div>
-
-      <div>
-        <h1>12PM</h1>
-        <input placeholder="Service needed"></input>
-        <!-- <button class="fas fa-save saveBtn"></button> -->
-        <a href="mailto:test@test.com?subject=&body=">ask for appointment
-        </a>
-      </div>
-
-      <div>
-        <h1>01PM</h1>
-        <input placeholder="Service needed"></input>
-        <!-- <button class="fas fa-save saveBtn"></button> -->
-        <a href="mailto:test@test.com?subject=&body=">ask for appointment
-        </a>
-      </div>
-
-      <div>
-        <h1>02PM</h1>
-        <input placeholder="Service needed"></input>
-        <!-- <button class="fas fa-save saveBtn"></button> -->
-        <a href="mailto:test@test.com?subject=&body=">ask for appointment
-        </a>
-      </div>
-
-      <div>
-        <h1>03PM</h1>
-        <input placeholder="Service needed"></input>
-        <!-- <button class="fas fa-save saveBtn"></button> -->
-        <a href="mailto:test@test.com?subject=&body=">ask for appointment
-        </a>
-      </div>
-
-      <div>
-        <h1>04PM</h1>
-        <input placeholder="Service needed"></input>
-        <!-- <button class="fas fa-save saveBtn"></button> -->
-        <a href="mailto:test@test.com?subject=&body=">ask for appointment
-        </a>
-      </div>
-
-      <div>
-        <h1>05PM</h1>
-        <input placeholder="Service needed"></input>
-        <!-- <button class="fas fa-save saveBtn"></button> -->
-        <a href="mailto:test@test.com?subject=&body=">ask for appointment
-        </a>
-      </div>
+    <!-- calendar -->
+    <div id="calendar"></div>
+    <!-- form -->
+    <div class="calendar-form">
+    <div id="apptForm">
+        <input type="text" placeholder="name" name="name" id="name" /><br>
+        <select name="service" placeholder="service" id="service">
+            <option value="manicure">manicure</option>
+            <option value="pedicure">pedicure</option>
+            <option value="dip powder">dip powder</option>
+            <option value="waxing">waxing</option>
+            <option value="eyelash extensions">eyelash extensions</option>
+        </select><br>
+        <input type="tel" placeholder="phone number" name="phone" id="phone" /><br>
+        <input type="date" placeholder="date" name="date" id="date" /><br>
+        <input type="time" placeholder="time" name="time" id="time" />
+        <!-- make this into a button please -->
+        <!-- $('#mailto').trigger('click'); (anthony said to do this) -->
+        <br>
+        <button type="button" id="mailto"
+            onclick="location.href='mailto:makingwaves@gmail.com?subject=...&body=...'">Submit</button>
+        <button type="button" onclick="location.href='contact.html'">Contact Info</button>
     </div>
+</div>
 
-    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./js/calendar.js"></script>
+</body>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
 </html>
+
+
+<!-- future development: add day view of occupancy of salon for walk-in clients -->
