@@ -22,32 +22,59 @@
             saLon
         </h1>
     </header>
+    <aside class="about-us">
+        <h2>About Us</h2>
+        <p>
+            &nbsp;&nbsp;We are located in beautiful PA , mAke wAves saLon is a regular nail salon for everyone, as we
+            always try our best to deliver the highest level of customer satisfaction.<br>
+            <br>Our goal at Us Nails is to make you feel good about choosing us. We offer exceptional customer service
+            in a wonderfully warm and inviting atmosphere. Each treatment is tailored especially to the client’s
+            individual needs. You will experience a unique atmosphere where you can relax and unwind with friends.<br>
+            <br>mAke wAves saLon understands that Safety and Sanitation are very important to customers. Our implements,
+            equipment, and electrical instruments are always thoroughly cleaned and subjected to an approved sanitizing
+            and disinfecting process before being reused. Buffers and files are used only once, then discarded. All
+            pedicure procedures are performed with liner protection. Our staff was trained to follow a proper
+            sanitization protocol that puts our customer’s cleanliness as the number one priority.<br>
+            <br>If you’re in need of Nail treatments or wish to know why so many residents come to our nail salon, come
+            to visit us today.
+        </p>
+        <img class="first-picture" src="Assets\pic8.jpg" alt="nail salon">
+    </aside>
+    
+    <div class="page">
 
-    <!-- calendar -->
-    <div id="calendar"></div>
-    <!-- form -->
-    <div class="calendar-form">
-    <div id="apptForm">
-        <input type="text" placeholder="name" name="name" id="name" /><br>
-        <select name="service" placeholder="service" id="service">
-            <option value="manicure">manicure</option>
-            <option value="pedicure">pedicure</option>
-            <option value="dip powder">dip powder</option>
-            <option value="waxing">waxing</option>
-            <option value="eyelash extensions">eyelash extensions</option>
-        </select><br>
-        <input type="tel" placeholder="phone number" name="phone" id="phone" /><br>
-        <input type="date" placeholder="date" name="date" id="date" /><br>
-        <input type="time" placeholder="time" name="time" id="time" />
-        <!-- make this into a button please -->
-        <!-- $('#mailto').trigger('click'); (anthony said to do this) -->
-        <br>
-        <button type="button" id="mailto"
-            onclick="location.href='mailto:makingwaves@gmail.com?subject=...&body=...'">Submit</button>
-        <button type="button" onclick="location.href='contact.html'">Contact Info</button>
+        <!-- form -->
+        <div class="calendar-input">
+            <div id="apptForm" class="calendar-form">
+                <h3>make an appointment</h3>
+                <input type="text" placeholder="name" name="name" id="name" /><br>
+                <select name="service" placeholder="service" id="service">
+                    <option value="manicure">manicure</option>
+                    <option value="pedicure">pedicure</option>
+                    <option value="dip powder">dip powder</option>
+                    <option value="waxing">waxing</option>
+                    <option value="eyelash extensions">eyelash extensions</option>
+                </select><br>
+                <input type="tel" placeholder="phone number" name="phone" id="phone" /><br>
+                <input type="date" placeholder="date" name="date" id="date" /><br>
+                <input type="time" placeholder="time" name="time" id="time" />
+                <!-- make this into a button please -->
+                <!-- $('#mailto').trigger('click'); (anthony said to do this) -->
+                <br>
+                <button type="button" id="mailto"
+                    onclick="location.href='mailto:makingwaves@gmail.com?subject=...&body=...'">Submit</button>
+            </div>
+        </div>
+       
+        <!-- calendar -->
+        <div id="calendar"></div>
     </div>
-</div>
-
+    <footer>
+        <h4>"Professional Nail Care for everyone "</h4>
+    </footer>
+    <div class="contact-btn">
+        <button type="button" id="contact-info" onclick="location.href='contact.html'">Contact Us</button>
+    </div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="./js/calendar.js"></script>
