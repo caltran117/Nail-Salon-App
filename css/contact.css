@@ -59,5 +59,42 @@ p {
 }
 
 #mailto {
-    display: none;
+    color: white;
+    text-decoration: none;
+    border: gray;
+    background: gray;
+    padding: 5px;
+    border-radius: 5px;
 }
+
+/* Sections are split into two columns at 992px or smaller */
+/* @media screen and (max-width: 992px) {
+    .about-me, .projects, .contact-me {
+      width: 100%;
+      background-color: #772014;
+    } */
+    /* Change the header bankgroud color */
+    /* header {
+      background: #772014;
+    } */
+    /* Change the footer color */
+    /* footer h2 {
+        color: #23bf4a;
+      }
+  } */
+  
+  /* Section are stacked on top of each other at 768px or smaller */
+  /* @media screen and (max-width: 768px) {
+    .about-me, .projects, .contact-me {
+      width: 100%;
+      background-color: #8ac4ff;
+    } */
+    /* Change the header bankgroud color */
+    /* header {
+      background: #8ac4ff;
+    } */
+    /* Change the footer color */
+    /* footer h2 {
+        color: #bf7623;
+      }
+  } */
