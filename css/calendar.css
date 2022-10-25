@@ -6,7 +6,7 @@
     background-size: 100%;
     background-image: url(../Assets/pic4.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     color: aliceblue;
 }
 
@@ -26,17 +26,16 @@
 /*edit form position and border*/
 .calendar-input {
     display: flex;
-    justify-content: space-evenly;
-    align-items:flex-end;
+    width: 20%;
     font-family: monospace;
     font-size: 30px;
-    margin: 9% 40% 0 30%;
     border: 1rem solid rgb(6, 121, 121);
 }
 
 /*edit form setting*/
 #apptForm {
     background-image: url(../Assets/pic7.jpg);
+    flex-wrap: wrap;
     width:100%;
     padding-left: 40px;
     padding-top: 5px;
@@ -44,13 +43,15 @@
 
 #calendar{
 background: white;
-position: relative;
+width: 30%;
+height: 60%;
 }
 
 .page{
-    position: relative;
-    justify-content: space-between;
-}
+    display: flex;
+    flex-direction: row;
+    margin:10px;
+    }
 
 input{
     border:1px solid grey;
@@ -58,10 +59,17 @@ input{
     box-sizing: border-box;
     box-shadow:0 0 15px 8px rgba(0,0,0,0.06);
     font-size: 15px;
-    transform:translate(25%,10%);
-    width: 300px;
+    width: 85%;
     padding: 10px;
 }
+
+/*select dropmenu for service option*/
+select {
+    width:85%;
+    padding:10px;
+    border-radius:3px;
+    font-size: 15px;
+} 
 
 /*pseudo element on input*/
 input:hover {
@@ -74,10 +82,10 @@ button {
     background: rgb(6, 121, 121);
     color:beige;
     font-size: 18px;
-    margin:2% 30%;
-    width: 150px;
+    width: auto;
     border-radius: 10px;
     border:1px solid beige;
+   justify-items: center;
 }
 
 /*add hover on button*/
@@ -86,11 +94,24 @@ button:hover {
     transition: 0.2s;
 }
 
-/*select dropmenu for service option*/
-select {
-    width: 300px;
-    padding:10px;
-    border-radius:3px;
-    transform:translate(25%,10%);
+/*set two divs position*/
+  .page > #calendar {
+    float: right;
+    position: relative;
+    left: 42%;
+  }
 
-  } 
+  .page > .calendar-input{
+    float: left;
+    position: relative;
+    left: 40%;
+  }
+
+  /*Media Query for mobile phones*/
+  @media only screen and (max-width: 768px) {
+    [class="page"] {
+    width: 200%;
+    flex-direction: column;
+    margin-left: -50%;
+    }
+  }
