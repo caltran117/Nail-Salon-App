@@ -24,7 +24,7 @@
 }
 
 /*edit form position and border*/
-.calendar-form {
+.calendar-input {
     display: flex;
     justify-content: space-evenly;
     align-items:flex-end;
@@ -40,6 +40,16 @@
     width:100%;
     padding-left: 40px;
     padding-top: 5px;
+}
+
+#calendar{
+background: white;
+position: relative;
+}
+
+.page{
+    position: relative;
+    justify-content: space-between;
 }
 
 input{
