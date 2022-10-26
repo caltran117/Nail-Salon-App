@@ -12,7 +12,7 @@ function changeHandler(event){
     var body = encodeURIComponent("Name: "+name+"\n"+"Email: "+email+"\n"+"Message: "+message);
     var mail = encodeURIComponent("saad.yousafi87@gmail.com");
 
-    anchorEl.setAttribute("href", "mailto:"+mail+"?subject=contact-us&body="+body);
+    anchorEl.setAttribute("href", "mailto:"+mail+"?subject=Appointment request&body="+body);
 }
 
 nameFieldEl.addEventListener("change", changeHandler);
