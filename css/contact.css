@@ -3,9 +3,12 @@
     margin: 0px;
     padding: 0px;
     background-size: 50%;
-    background-image: url(../images/light-blue.jpg)
 }
 
+body {
+    background-image: url(../images/light-blue.jpg);
+    background-repeat: no-repeat;
+}
 
 
 #headerh1 {
