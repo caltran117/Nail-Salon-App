@@ -3,21 +3,34 @@
     margin: 0px;
     padding: 0px;
     background-size: 50%;
-    background-color: #DBECF2
+    background-image: url(../images/light-blue.jpg)
 }
 
 
 
-header {
+#headerh1 {
+    border: 1px solid rgb(74, 133, 133);
+    line-height: 55px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: rgb(232, 240, 240);
+    text-align: center;
+    background: rgb(6, 121, 121);
+    margin-bottom: 100px;
+    margin-left: 0;
+}
+
+.contact {
     display: flex;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 800;
-    background-image: url(..images/light-blue.jpg)
 }
 
 h1 {
     margin-block-start: 1em;
     margin-inline-start: 10%;
+    font-size: 40px
 }
 
 p {
@@ -28,23 +41,26 @@ p {
 #nail-pic {
     width: 20vw;
     border-radius: 5%;
-    padding-top: 5%;
+    padding-top: 12%;
     padding-bottom: 5%;
     padding-right: 2%;
-    margin-bottom: 5%;
-
+    Margin-left: 19%
 }
+
 
 .container {
     display: flex;
     flex-direction: row;
+    position: absolute;
+    top: 710px;
+    right: 1210px;
+
 }
 
 .contact-information {
     position: relative;
     align-items: flex-start;
     margin-left: 30%;
-    padding: 100px;
     width: 50%;
 }
 
@@ -65,10 +81,8 @@ p {
     height: 350px;
     position: relative;
     width: 500px;
-
-
-
-
+    left: -178px;
+    top: -534px;
 }
 
 #mailto {
