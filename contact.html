@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- style rules for map -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
-     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
-     crossorigin=""/>
-     <!-- Script tag for map -->
-     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
-     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
-     crossorigin="">
-    </script>
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <!-- Script tag for map -->
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+        integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin="">
+        </script>
+    <link rel="stylesheet" href="css/contact.css">
+
 
     <title>Contact Us</title>
 </head>
@@ -23,39 +25,39 @@
 <body>
     <header>
         <h1>CONTACT US</h1>
+        <img id="nail-pic" src="images\Nail-pic.jpg" alt="nails">
     </header>
-
     <section class="container">
         <div calss="customer-submit">
-            <form action="#">
-                <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control">
-                        <input id="name" class="input" type="text" placeholder="Enter Your Name">
-                    </div>
+            <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                    <input id="name" class="input" type="text" placeholder="Enter Your Name">
                 </div>
+            </div>
 
-                <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                        <input id="email" class="input" type="email" placeholder="Enter Your Email">
-                    </div>
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                    <input id="email" class="input" type="email" placeholder="Enter Your Email">
                 </div>
+            </div>
 
-                <div class="field">
-                    <label class="label">Message</label>
-                    <div class="control">
-                        <textarea id="message" name="message" class="input" placeholder="Enter Your Message">
+            <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                    <textarea id="message" name="message" class="input" placeholder="Enter Your Message">
 
                     </textarea>
-                    </div>
                 </div>
+            </div>
 
-                <div class="field">
-                    <div class="control">
-                        <div id=mail><a id="mailto" href="mailto:makingwaves@gmail.com?subject=...&body=...">Submit</a></div>
+            <div class="field">
+                <div class="control">
+                    <div id=mail><a id="mailto" href="mailto:makingwaves@gmail.com?subject=...&body=...">Submit</a>
                     </div>
                 </div>
+            </div>
             </form>
         </div>
 
@@ -64,7 +66,8 @@
             <p>Call us at: 1 215-309-5680</p>
             <p>Email us at: contactus@contactus.com</p>
             <i id="home-icon" class="fa fa-home"></i>
-            
+
+
             <div id="map">here is map</div>
         </div>
 
