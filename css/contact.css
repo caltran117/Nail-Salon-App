@@ -1,0 +1,58 @@
+head {
+    font-family: sans-serif;
+    font-size: 15px font-weight: 400;
+    margin-right: 50%;
+    margin: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+}
+
+#home-icon {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    right: 48px;
+    width: 0px;
+    height: 187px;
+    bottom: 78%;
+}
+
+body {
+    background-color: #cae8f1;
+
+}
+
+label {
+    font-size: 25px;
+    border-color: black
+}
+
+
+header {
+    font-size: 25px;
+    background-image: url(../images/Light-blue.jpg)
+}
+
+.field {
+    font-size: 40px;
+    position: 50%;
+    border: black
+}
+
+#nails {
+    width: 20vw;
+    border-radius: -15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 2%;
+    display: flex;
+    margin-left: 50%;
+
+
+
+}
