@@ -1,0 +1,233 @@
+/*add background img*/
+:root {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-size: 100%;
+    background-image: url(../Assets/pic4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+
+/*set header and font style */
+#headerh1 {
+    border: 1px solid rgb(74, 133, 133);
+    line-height: 55px;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: rgb(232, 240, 240);
+    text-align: center;
+    background: rgb(6, 121, 121);
+    margin-bottom: 100px;
+}
+
+.about-us h2 {
+    font-family: 'Segoe UI';
+    font-weight: 300;
+    font-size: 50px;
+    color: beige;
+    margin: -1% 10%;
+}
+
+.about-us p {
+    background-color: rgb(247, 236, 221);
+    opacity: 70%;
+    font-family: verdana;
+    color: black;
+    font-weight: 200;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px inset beige;
+    padding: 5px;
+}
+
+h3 {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+}
+
+/*edit form position and border*/
+.calendar-input {
+    width: 20%;
+    height: auto;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+#calendar {
+    background:whitesmoke;
+    width: 40%;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    border: 1px solid beige;
+    background-color: aliceblue;
+    opacity: 85%;
+    color: black;
+}
+
+.first-picture {
+    float: right;
+}
+
+input {
+    border: 1px solid grey;
+    border-radius: 3px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px 8px rgba(0, 0, 0, 0.06);
+    font-size: 15px;
+    width: 90%;
+    padding: 10px;
+}
+
+/*select dropmenu for service option*/
+select {
+    width: 90%;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+/*pseudo element on input*/
+input:hover {
+    background-color: antiquewhite;
+    transition: 0.2s;
+}
+
+/*set button style and border*/
+button {
+    background: rgb(6, 121, 121);
+    color: beige;
+    font-size: 18px;
+    width: auto;
+    border-radius: 10px;
+    border: 1px solid beige;
+    margin-left: 30%;
+}
+
+/*add hover on button*/
+button:hover {
+    background-color: #e069a1;
+    transition: 0.2s;
+}
+
+#contact-info{
+color: beige;
+border-radius: 1%;
+width: 200px;
+height: 50px;
+background-color:rgb(6, 121, 121);
+margin-left: 20%;
+}
+
+/*set two divs position*/
+.page>#calendar {
+    float: right;
+    position: relative;
+    left: 25%;
+    margin-top: 5%;
+}
+
+.page>.calendar-input {
+    float: left;
+    position: relative;
+    left: 20%;
+    margin-top: 5%;
+}
+
+aside {
+    width: 40%;
+    height: 90%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: left;
+}
+
+footer {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-align: center;
+    border: 2px solid rgb(247, 248, 247);
+    background-color: beige;
+    margin: 10% 0;
+}
+
+/*Media Query for mobile phones*/
+@media only screen and (max-width: 768px) {
+    [class="page"] {
+        width: 100%;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+}
+
+
+
+  /* Sections are split into two columns at 992px or smaller 
+@media screen and (max-width: 992px) {
+    .about-me, .projects, .contact-me {
+      width: 100%;
+      background-color: #772014;
+    }
+    /* Change the header bankgroud color 
+    header {
+      background: #772014;
+    }
+    /* Change the footer color
+    footer h2 {
+        color: #23bf4a;
+      }
+
+  /* Section are stacked on top of each other at 768px or smaller
+    .about-me, .projects, .contact-me {
+      width: 100%;
+      background-color: #8ac4ff;
+    }
+    /* Change the header bankgroud color 
+    header {
+      background: #8ac4ff;
+    }
+    /* Change the footer color 
+    footer h2 {
+        color: #bf7623;
+      }
+  }
+
+  /* Sections are split into two columns at 992px or smaller */
+/* @media screen and (max-width: 992px) {
+    .about-me, .projects, .contact-me {
+      width: 100%;
+      background-color: #772014;
+    } */
+    /* Change the header bankgroud color */
+    /* header {
+      background: #772014;
+    } */
+    /* Change the footer color */
+    /* footer h2 {
+        color: #23bf4a;
+      }
+  } */
+  
+  /* Section are stacked on top of each other at 768px or smaller */
+  /* @media screen and (max-width: 768px) {
+    .about-me, .projects, .contact-me {
+      width: 100%;
+      background-color: #8ac4ff;
+    } */
+    /* Change the header bankgroud color */
+    /* header {
+      background: #8ac4ff;
+    } */
+    /* Change the footer color */
+    /* footer h2 {
+        color: #bf7623;
+      }
+  } */
+

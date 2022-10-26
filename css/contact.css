@@ -1,58 +1,104 @@
+:root {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-size: 50%;
+    background-color: rgb(19, 220, 255);
+    background-image: url(../Assets/pic6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+
 head {
-    font-family: sans-serif;
-    font-size: 15px font-weight: 400;
-    margin-right: 50%;
-    margin: 10px 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 70px;
+    background-
 }
-
-#home-icon {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    position: absolute;
-    right: 48px;
-    width: 0px;
-    height: 187px;
-    bottom: 78%;
-}
-
-body {
-    background-color: #cae8f1;
-
-}
-
-label {
-    font-size: 25px;
-    border-color: black
-}
-
 
 header {
-    font-size: 25px;
-    background-image: url(../images/Light-blue.jpg)
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+}
+
+h1 {
+    margin-block-start: 1em;
+    margin-inline-start: 10%;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-information {
+    position: relative;
+    align-items: flex-start;
+    margin-left: 30%;
+    padding: 100px;
+    border: 1px solid white;
+    width: 50%;
+}
+
+.customer-submit {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .field {
-    font-size: 40px;
-    position: 50%;
-    border: black
+    margin-left: 100%;
 }
 
-#nails {
-    width: 20vw;
-    border-radius: -15%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-right: 2%;
-    display: flex;
-    margin-left: 50%;
-
-
+#map {
+    height: 480px;
 
 }
+
+#mailto {
+    color: white;
+    text-decoration: none;
+    border: gray;
+    background: gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Sections are split into two columns at 992px or smaller */
+/* @media screen and (max-width: 992px) {
+    .about-me, .projects, .contact-me {
+      width: 100%;
+      background-color: #772014;
+    } */
+/* Change the header bankgroud color */
+/* header {
+      background: #772014;
+    } */
+/* Change the footer color */
+/* footer h2 {
+        color: #23bf4a;
+      }
+  } */
+
+/* Section are stacked on top of each other at 768px or smaller */
+/* @media screen and (max-width: 768px) {
+    .about-me, .projects, .contact-me {
+      width: 100%;
+      background-color: #8ac4ff;
+    } */
+/* Change the header bankgroud color */
+/* header {
+      background: #8ac4ff;
+    } */
+/* Change the footer color */
+/* footer h2 {
+        color: #bf7623;
+      }
+  } */
