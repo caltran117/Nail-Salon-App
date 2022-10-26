@@ -29,10 +29,11 @@ when there is a contact page then customers can view a map of location and conta
 when there is a calendar page with a form to fill out name, service, number and date/time then it will be emailed to relevant person
 when there is a pre fill email link that uses javascript to take information from the form to the email then it will be easier for clients to send a email with the required information
 
-### APIs you plans to use or Technology
+### APIs or technology library
 Google calendar
 Google Maps
-Leafly
+Leaflet
+bulma
 
 ### Specific First Tasks - Assigned
 HTML, then CSS, then Javascript
@@ -43,7 +44,6 @@ Muchir + Anne - css
 Saad - Javascript
 
 ## Credits
-
 - Calvin
 - Muchir
 - Anne
@@ -51,12 +51,12 @@ Saad - Javascript
 - Alejandro
 
 ## License
-
 no license, ask for permission to use.
 
 ## Features
-
-appointment creation
-day occupancy view for walk-in customers
+calender appointment view
 email pre fill from form input
 map of location + contact information
+
+Future Developments
+day occupancy view for walk-in customers
