@@ -16,7 +16,7 @@ function changeHandler(event){
     var body = encodeURIComponent("Name: "+name+"\n"+"Email: "+email+"\n"+"Message: "+message);
     var mail = encodeURIComponent("saad.yousafi87@gmail.com");
 
-    anchorEl.setAttribute("href", "mailto:"+mail+"?Contact Us&body="+body);
+    anchorEl.setAttribute("href", "mailto:"+mail+"?Subject=Contact Us&body="+body);
 }
 
 // calling event listener on elements
@@ -24,7 +24,7 @@ nameFieldEl.addEventListener("change", changeHandler);
 emailFieldEl.addEventListener("change", changeHandler);
 textAreaEl.addEventListener("change", changeHandler);
 
-// settings for maps to be display on the page
+// settings for maps to be display on
 var map = L.map('map').setView([39.9382, -75.1723],13);
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
