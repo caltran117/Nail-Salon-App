@@ -1,17 +1,19 @@
 
-var btnEl = document.getElementById("mailto");
+var anchorEl = document.getElementById("mailto");
 var nameFieldEl = document.getElementById("name");
 var selectFieldEl = document.getElementById("service");
+var phoneEl = document.getElementById("phone");
 var dateEl = document.getElementById("date");
 var timeEl = document.getElementById("time");
 var calendarArray = [];
 var events = [];
 
 // This function is to setup calendar
-function draw(data){
+function draw(){
   var calendarEl = document.getElementById('calendar');
 
   var calendar = new FullCalendar.Calendar(calendarEl, {
+
     initialView: 'timeGridWeek',
     height: 400,
     allDaySlot: false,
@@ -21,42 +23,44 @@ function draw(data){
         startTime: '09:00',
         endTime: '18:00',
     },
-    events: data
+    displayEventTime: false, // don't show the time column in list view
+    googleCalendarApiKey: 'AIzaSyCWWne01OTyVCO8uVwBFAnvOUO-JwFp4XM',
+    events: '249a38768404e36b6a17ca77d8b79006060f38c71274ef6f8da82aebcdd603d1@group.calendar.google.com',
+
+    eventClick: function(arg) {
+
+      // opens events in a popup window
+      window.open(arg.event.url, '_blank', 'width=700,height=600');
+
+      // prevents current tab from navigating
+      arg.jsEvent.preventDefault();
+    }
   });
   calendar.render();
 }
 
-// this function is to fetch data from local storage
-function getData(){
-  let retrived = localStorage.getItem("events");
-  events = JSON.parse(retrived);
-  if(events == null){
-    events = [];
-  }
-}
-
-// function call to getData() function
-getData();
-
-// function call to Draw() function to display it in browser with events.
-draw(events.map(obj =>{
-  console.log(localStorage.getItem(events[0].title));
-  return {
-    title: obj.title,
-    start: obj.start,
-  }
-}));
-
-// event listener for submit button event.
-btnEl.addEventListener("click", function(event){
+// this function takes input values and setup email
+function changeHandler(event){
   var name = nameFieldEl.value;
+  var service = selectFieldEl.value;
+  var phone = phoneEl.value;
   var date = dateEl.value;
   var time = timeEl.value;
 
-  calendarArray.push({
-    title: name,
-    start: date+"T"+time+":00"
-  });
-  localStorage.setItem("events", JSON.stringify(calendarArray));
-  
-});
+  var body = encodeURIComponent("Name: "+name+"\n"+"Service: "+service+"\n"+"Phone: "+phone+"\n"+"Date: "+date+"\n"+"Time: "+time);
+  var mail = encodeURIComponent("saad.yousafi87@gmail.com");
+
+  anchorEl.setAttribute("href", "mailto:"+mail+"?Subject=Appointment Schedule&body="+body);
+}
+
+
+// function call to display calendar in browser with events.
+draw();
+
+//calling event listener on elements
+nameFieldEl.addEventListener("change", changeHandler);
+selectFieldEl.addEventListener("change", changeHandler);
+phoneEl.addEventListener("change", changeHandler);
+dateEl.addEventListener("change", changeHandler);
+timeEl.addEventListener("change", changeHandler);
+
