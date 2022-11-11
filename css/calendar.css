@@ -115,6 +115,16 @@ input:hover {
     transition: 0.2s;
 }
 
+/* style rule for submit anchor tag */
+#mailto {
+    color: white;
+    text-decoration: none;
+    border: gray;
+    background: gray;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 /*set button style and border*/
 button {
     background: rgb(6, 121, 121);
